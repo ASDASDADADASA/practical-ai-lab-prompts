@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asdasdadadasa.github.io/practical-ai-lab-prompts/gate-sync/sitemap.xml
