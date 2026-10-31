@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Gate Sync — free browser game (no download)</title>
+  <meta name="description" content="Gate Sync is a free one-thumb color rail timing puzzle. Flip rails so the light hits every matching gate. Play in the browser — no account, no download." />
+  <meta name="keywords" content="gate sync browser game free no download, one thumb color gates mobile game, color rail timing puzzle online free" />
+  <link rel="canonical" href="./index.html" />
+  <meta property="og:title" content="Gate Sync — free browser game" />
+  <meta property="og:description" content="One-thumb timing: flip rails so the light hits every matching gate." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Gate <span>Sync</span></div>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Play</a>
+      <a href="howto.html">How to play</a>
+      <a href="about.html">About</a>
+      <a href="#hub">Hub</a>
+    </nav>
+  </header>
+  <p class="tagline">One-thumb timing: flip rails so the light hits every matching gate. Free in the browser.</p>
+
+  <main id="game-shell">
+    <h1 class="hidden">Gate Sync — free browser game</h1>
+    <div id="hud">
+      <span id="hud-level">L1 · Warm-up</span>
+      <span id="hud-stars" class="hidden">★★★</span>
+      <span id="hud-miss">Miss 0</span>
+      <button type="button" id="btn-mute" aria-pressed="false" title="Mute sound">Mute</button>
+    </div>
+    <div id="game-wrap">
+      <div id="twin-hint" class="hidden" aria-live="polite"></div>
+      <div id="sound-tip" class="hidden" aria-hidden="true">Sound unlocks on Play</div>
+      <canvas id="game" width="390" height="700" aria-label="Gate Sync play area"></canvas>
+      <div id="overlay">
+        <h2 id="overlay-title">Gate Sync</h2>
+        <p id="overlay-sub">Left half = previous rail, right half = next. Match every gate color. Sound unlocks on Play.</p>
+        <button type="button" id="overlay-btn">Play</button>
+      </div>
+    </div>
+    <p class="hint-bar">Left half = previous rail · Right half / Space = next · Portrait recommended</p>
+  </main>
+
+  <section class="page" style="padding-top:0">
+    <div class="card">
+      <strong>Quick start</strong>
+      <p style="margin:0.4em 0 0">The light moves forward on its own. Tap the left half of the play area for the previous rail, or the right half (or Space) for the next. Pass through every same-color gate. Walls end the run; blank gaps are safe. Three levels in v1: Warm-up, Split Path, Twin Gates.</p>
+      <p style="margin:0.6em 0 0"><a href="howto.html">Full how-to &amp; FAQ</a> · <a href="about.html">About this lab</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="index.html">Play</a>
+      <a href="howto.html">How to</a>
+      <a href="about.html">About</a>
+      <a id="hub" href="./">Hub (placeholder)</a>
+    </nav>
+    <p>Gate Sync · free browser puzzle · Practical AI Lab open game lab · no account required</p>
+  </footer>
+
+  <script src="js/audio.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

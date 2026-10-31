@@ -4,6 +4,8 @@ Reusable prompts and try-today checklists from [@GHedgehog37598](https://x.com/G
 
 **Promise:** hot AI news → one thing an ordinary person can try today.
 
+**Play:** [Gate Sync](https://asdasdadadasa.github.io/practical-ai-lab-prompts/gate-sync/) — free browser game in this repo.
+
 ## How to use
 
 1. Open a file under [`prompts/`](./prompts/).
